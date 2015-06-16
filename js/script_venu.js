@@ -1,4 +1,9 @@
 	$(document).ready(function() {
+		$(window).load(function() {
+	    // Animate loader off screen
+	    $(".se-pre-con").fadeOut("slow");;
+	});
+
 var bso_v=20;
 var bso_nv=30;
 var bno_v=20;
