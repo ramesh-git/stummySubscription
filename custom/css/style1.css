@@ -1024,3 +1024,12 @@ text-align: right;
 	#cartCheckout > thead > tr > th{
 		font-weight: bold;
 	}
+	.middle{
+		float: left;
+		text-align: right;
+	}
+	#cartItemDesc1 > div{
+		line-height: 40px;
+		font-weight: bold;
+  font-family: san-Regular;
+	}
