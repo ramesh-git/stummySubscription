@@ -169,20 +169,20 @@
                 <h4 id="modalTitle" class="modal-title">MENU</h4>
             </div>
             <div id="modalBody" class="modal-body">
-                  <div><input type="radio" name="menu" id="menu">Break Fast</input>
-                  <input type="radio" name="menu" id="menu">Lunch</input>
-                  <input type="radio" name="menu" id="menu">Dinner</input></div>
-                  <div><label class="lab">South Indian - Veg </label><input type="text" class="input"/></div>
-                  <div><label class="lab">South Indian - Non Veg </label><input type="text" class="input"/> </div>
-                  <div><label class="lab">North Indian - Veg </label><input type="text" class="input"/></div>
-                  <div><label class="lab">North Indian - Non Veg </label><input type="text" class="input"/></div>
-                  <div><label class="lab">Continental  - Veg </label><input type="text" class="input"/></div>
-                  <div><label class="lab">Continental - Non Veg </label><input type="text" class="input"/></div>
+                  <div><input type="radio" name="menu" id="menu" value="breakfast">Break Fast</input>
+                  <input type="radio" name="menu" id="menu" value="lunch">Lunch</input>
+                  <input type="radio" name="menu" id="menu" value="dinner">Dinner</input></div>
+                  <div><label class="lab">South Indian - Veg </label><input type="text" class="input" id="sivqty"/></div>
+                  <div><label class="lab">South Indian - Non Veg </label><input type="text" class="input" id="sinvqty"/> </div>
+                  <div><label class="lab">North Indian - Veg </label><input type="text" class="input" id="nivqty"/></div>
+                  <div><label class="lab">North Indian - Non Veg </label><input type="text" class="input" id="ninvqty"/></div>
+                  <div><label class="lab">Continental  - Veg </label><input type="text" class="input" id="covqty"/></div>
+                  <div><label class="lab">Continental - Non Veg </label><input type="text" class="input" id="convqty"/></div>
                   
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button class="btn btn-default"><a id="eventUrl" target="_blank">Save</a></button>
+                <button type="button" id="save_data" class="btn btn-default">Save</button>
             </div>
         </div>
     </div>
@@ -192,9 +192,17 @@
               </div>              
           <div class="col-md-3 cart hidden-xs hidden-sm"> 
               <div class="cartHeading"><span class="glyphicon glyphicon-shopping-cart"></span>  Your Cart <span class="badge cartItemCount"></span></div>
-              <!--<div class="estimatedTime">Estimated Delivery time: 50 min</div>-->
+			  <!--<div class="estimatedTime">Estimated Delivery time: 50 min</div>-->
               <div class="cartItems">
-					<div id="cartItemDesc" class="scroll"></div>
+					<div id="cartItemDesc1" class="scroll">
+				      <div><div class="left">Breakfast - Veg </div><div class="right subtotal" id="bf_veg_tot">0</div></div>
+					  <div><div class="left">Breakfast - Non Veg </div><div class="right subtotal" id="bf_nonveg_tot">0</div></div>
+					  <div><div class="left">Lunch - Veg </div><div class="right subtotal" id="lu_veg_tot">0</div></div>
+					  <div><div class="left">Lunch - Non Veg </div><div class="right subtotal" id="lu_nonveg_tot">0</div></div>
+					  <div><div class="left">Dinner - Veg </div><div class="right subtotal" id="di_veg_tot">0</div></div>
+					  <div><div class="left">Dinner - Non Veg </div><div class="right subtotal" id="di_nonveg_tot">0</div></div>
+					  <div><div class="left">Total </div><div class="right subtotal">0</div></div>
+					</div>
                     <hr class="hrLine">
                     <div class="customize clearCart" title="Click to clear all cart items">Clear Cart</div>
                     <div><div class="left">Sub Total</div><div class="right subtotal">0.00</div></div>

@@ -34,3 +34,9 @@
         .input{
           width:15%;
         }
+#cartItemDesc1 {
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-height: 150px;
+    max-height: 150px;
+}
